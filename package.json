@@ -1,0 +1,14 @@
+{
+  "scripts": {
+    "dev": "concurrently \"tailwindcss -o ./assets/styles.css --content './**/*.php' -w\" \"npx -y kirbyup src/index.js --watch\"",
+    "build": "npx tailwindcss -o ./assets/styles.css --content './**/*.php' -m & npx -y kirbyup src/index.js"
+  },
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.5.3",
+    "@tailwindcss/typography": "^0.5.9",
+    "tailwindcss": "^3.3.2"
+  },
+  "dependencies": {
+    "concurrently": "^8.2.1"
+  }
+}

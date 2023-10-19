@@ -1,0 +1,13 @@
+# Git
+.gitattributes export-ignore
+.github/ export-ignore
+.gitignore export-ignore
+.changelogs.md export-ignore
+
+# Development files
+ecs.php export-ignore
+composer.lock export-ignore
+package-lock.json export-ignore
+package.json export-ignore
+src/ export-ignore
+tailwind.config.js

@@ -1,0 +1,11 @@
+type: pages
+label: pixelopen.news.blueprints.sections.name
+parent: kirby.page("news")
+info: "{{ page.published }}"
+template: new
+empty: pixelopen.news.blueprints.sections.empty
+sortBy: date desc
+image:
+  query: page.cover.toFile
+  cover: true
+  ratio: 3/2

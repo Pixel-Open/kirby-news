@@ -1,0 +1,67 @@
+title: pixelopen.news.blueprints.pages.new.title
+num: date
+icon: document
+
+status:
+  draft:
+    label: pixelopen.news.blueprints.pages.new.draft
+    text: pixelopen.news.blueprints.pages.new.draft.text
+  unlisted:
+    label: pixelopen.news.blueprints.pages.new.unlisted
+    text: pixelopen.news.blueprints.pages.new.unlisted.text
+  listed:
+    label: pixelopen.news.blueprints.pages.new.listed
+    text: pixelopen.news.blueprints.pages.new.listed.text
+
+tabs:
+  content:
+    label: pixelopen.news.blueprints.pages.new.content
+    columns:
+      - width: 2/3
+        fields:
+          text:
+            label: pixelopen.news.blueprints.pages.new.text
+            type: blocks
+
+
+      - width: 1/3
+        sections:
+          meta:
+            type: fields
+            fields:
+              cover:
+                label: pixelopen.news.blueprints.pages.new.cover
+                type: files
+                # If you remove the required, you will have to fix some errors to handle the case where there is no image
+                required: true
+                multiple: false
+                query: page.images.template('image')
+                uploads:
+                  template: image
+              
+              description:
+                label: pixelopen.news.blueprints.pages.new.description
+                type: text
+
+              spotlight:
+                label: pixelopen.news.blueprints.pages.new.spotlight
+                type: toggle
+                text:
+                  - pixelopen.news.no
+                  - pixelopen.news.yes
+                
+              date:
+                label: pixelopen.news.blueprints.pages.new.date
+                type: date
+                time: true
+                display:
+                  en: YYYY-MM-DD
+                  fr: DD/MM/YYYY
+                default: now
+              tags: true
+          files:
+            type: files
+            label: pixelopen.news.blueprints.pages.new.files
+            template: blocks/image
+
+  meta: tabs/meta/page

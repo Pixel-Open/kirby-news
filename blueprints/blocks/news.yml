@@ -1,0 +1,35 @@
+title: pixelopen.news.blueprints.blocks.title
+icon: document
+
+tabs:
+  settings:
+    fields:
+      class:
+        width: 1/2
+        label: Class
+        type: text
+      id:
+        width: 1/2
+        label: ID
+        type: text
+      name:
+        label: pixelopen.news.blueprints.blocks.name
+        width: 2/4
+        type: text
+      pagination:
+        width: 1/4
+        label: pixelopen.news.blueprints.blocks.pagination
+        type: number
+        min: 1
+        max: 4
+        default: 3
+      show_image:
+        width: 1/4
+        label: pixelopen.news.blueprints.blocks.show_image
+        type: toggle
+        text:
+          - pixelopen.news.no
+          - pixelopen.news.yes
+      description:
+        label: pixelopen.news.blueprints.blocks.description
+        type: text

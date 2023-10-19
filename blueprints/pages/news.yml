@@ -1,0 +1,40 @@
+title: pixelopen.news.blueprints.pages.title
+icon: document
+
+tabs:
+  main:
+    label: pixelopen.news.blueprints.pages.news.tabs.main
+    columns:
+      - width: 1/3
+        sections:
+          drafts:
+            extends: sections/news
+            label: pixelopen.news.blueprints.pages.draft
+            status: draft
+
+          unlisted:
+            extends: sections/news
+            label: pixelopen.news.blueprints.pages.unlisted
+            status: unlisted
+
+      - width: 2/3
+        sections:
+          listed:
+            extends: sections/news
+            label: pixelopen.news.blueprints.pages.listed
+            status: listed
+            size: small
+            layout: cards
+  settings:
+    label: pixelopen.news.blueprints.pages.news.tabs.settings
+    fields:
+      pagination:
+        label: pixelopen.news.blueprints.pages.news.tabs.settings.pagination
+        type: number
+        min: 1
+        default: 6
+        width: 1/4
+      gap:
+        width: 3/4
+
+  meta: tabs/meta/page
