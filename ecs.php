@@ -14,7 +14,6 @@ return function (ECSConfig $ecsConfig): void {
         __DIR__ . '/controllers',
         __DIR__ . '/collections',
         __DIR__ . '/blueprints',
-        __DIR__ . '/translations',
     ]);
 
     // this way you add a single rule

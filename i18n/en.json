@@ -1,7 +1,6 @@
 {
     "pixelopen.news.no": "No",
     "pixelopen.news.yes": "Yes",
-
     "pixelopen.news": "News",
     "pixelopen.news.blueprints.pages.title": "News",
     "pixelopen.news.blueprints.pages.draft": "Drafts",
@@ -32,5 +31,5 @@
     "pixelopen.news.snippets.blocks.description": "See the most recent news",
     "pixelopen.news.blueprints.blocks.name": "Block name",
     "pixelopen.news.blueprints.blocks.description": "Description",
-    "pixelopen.news.blueprints.blocks.show_image": "Show image?",
+    "pixelopen.news.blueprints.blocks.show_image": "Show image?"
 }

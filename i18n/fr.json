@@ -1,7 +1,6 @@
 {
     "pixelopen.news.no": "Non",
     "pixelopen.news.yes": "Oui",
-
     "pixelopen.news": "Actualité",
     "pixelopen.news.blueprints.pages.title": "Actualités",
     "pixelopen.news.blueprints.pages.draft": "Brouillons",
@@ -32,5 +31,5 @@
     "pixelopen.news.snippets.blocks.description": "Voici les actualités les plus récentes",
     "pixelopen.news.blueprints.blocks.name": "Nom du bloc",
     "pixelopen.news.blueprints.blocks.description": "Description",
-    "pixelopen.news.blueprints.blocks.show_image": "Afficher l\"image",
+    "pixelopen.news.blueprints.blocks.show_image": "Afficher l\"image"
 }
