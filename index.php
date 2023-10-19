@@ -94,11 +94,7 @@ Kirby::plugin('pixelopen/news', [
             }
         },
     ],
-    'translations' => [
-        'de' => require __DIR__ . '/translations/en.php',
-        'en' => require __DIR__ . '/translations/en.php',
-        'fr' => require __DIR__ . '/translations/fr.php',
-    ],
+    'translations' => require __DIR__ . '/i18n.php',
     'assets' => fn () => [
         'styles.css' => __DIR__ . '/assets/styles.css',
         'new.css' => __DIR__ . '/assets/new.css',
