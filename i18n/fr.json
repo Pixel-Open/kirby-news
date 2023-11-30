@@ -31,5 +31,7 @@
     "pixelopen.news.snippets.blocks.description": "Voici les actualités les plus récentes",
     "pixelopen.news.blueprints.blocks.name": "Nom du bloc",
     "pixelopen.news.blueprints.blocks.description": "Description",
-    "pixelopen.news.blueprints.blocks.show_image": "Afficher l\"image"
+    "pixelopen.news.blueprints.blocks.show_image": "Afficher l\"image",
+    "pixelopen.news.blueprints.pages.news.tabs.settings.categories": "Catégories",
+    "pixelopen.news.blueprints.pages.new.category": "Catégorie"
 }

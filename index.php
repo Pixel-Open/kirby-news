@@ -15,7 +15,7 @@ class NewPage extends Page
     }
 }
 
-Kirby::plugin('pixelopen/news', [
+Kirby::plugin('pixelopen/kirby-news', [
     'api' => [
         'routes' => [
             [

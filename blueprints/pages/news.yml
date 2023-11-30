@@ -36,5 +36,9 @@ tabs:
         width: 1/4
       gap:
         width: 3/4
+      categories:
+        label: pixelopen.news.blueprints.pages.news.tabs.settings.categories
+        type: tags
+        width: 1/4
 
   meta: tabs/meta/page

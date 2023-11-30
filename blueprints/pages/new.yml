@@ -58,6 +58,12 @@ tabs:
                   en: YYYY-MM-DD
                   fr: DD/MM/YYYY
                 default: now
+              category:
+                type: select
+                label: pixelopen.news.blueprints.pages.new.category
+                options:
+                  type: query
+                  query: site.find("news").categories.split
               tags: true
           files:
             type: files
