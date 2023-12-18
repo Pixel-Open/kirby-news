@@ -1,10 +1,13 @@
 # Kirby News plugin
 
-![GitHub release (with filter)](https://img.shields.io/github/v/release/Pixel-Open/kirby-news?style=for-the-badge)
-
-[![Dependency](https://img.shields.io/badge/kirby-3.6-cca000.svg?style=for-the-badge)](https://getkirby.com/)
+![GitHub release (with filter)](https://img.shields.io/github/v/release/Pixel-Open/kirby-news?style=for-the-badge) [![Dependency](https://img.shields.io/badge/kirby-4-cca000.svg?style=for-the-badge)](https://getkirby.com/)
 
 A plugin for [Kirby CMS](http://getkirby.com) to add a news module
+
+## Requirements
+
++ Kirby >= 4
++ PHP >= 8
 
 ## Commercial Usage
 
