@@ -1,7 +1,7 @@
 {
     "name": "pixelopen/kirby-news",
     "type": "kirby-plugin",
-    "description": "A plugin for Kirby 3 CMS to add news module",
+    "description": "A plugin for Kirby 4 CMS to add news module",
     "homepage": "https://github.com/Pixel-Developpement/kirby-dev",
     "license": "MIT",
     "authors": [
@@ -11,14 +11,14 @@
         }
     ],
     "keywords": [
-        "kirby3",
-        "kirby3-cms",
-        "kirby3-plugin"
+        "kirby4",
+        "kirby4-cms",
+        "kirby4-plugin"
     ],
     "require": {
         "getkirby/composer-installer": "^1.1",
-        "getkirby/cms": "^3.6.0||^4.0.0",
-        "fabianmichael/kirby-meta": "^0.4.2-beta"
+        "getkirby/cms": "^4.0.0",
+        "fabianmichael/kirby-meta": "^1.0"
     },
     "config": {
         "optimize-autoloader": true,
