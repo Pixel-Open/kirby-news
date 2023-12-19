@@ -74,9 +74,13 @@ Kirby::plugin('pixelopen/kirby-news', [
         'news' => function ($kirby) {
             return [
                 'label' => t('pixelopen.news'),
-                'icon' => 'document',
+                'icon' => 'pen',
                 'menu' => true,
                 'link' => "pages/news",
+                'current' => function (string $current): bool {
+                    $path = \Kirby\Cms\App::instance()->request()->path()->toString();
+                    return \Kirby\Toolkit\Str::contains($path, 'pages/news');
+                },
             ];
         },
     ],

@@ -5,7 +5,7 @@
                 <k-header v-if="content.name" class="news-title">{{ content.name }}</k-header>
                 <k-header v-else class="news-title">{{ $t('pixelopen.news.blueprints.blocks.title') }}</k-header>
             </a>
-            <k-items v-if="news.length && content.show_image" :items="news" layout="cards">
+            <k-items v-if="news.length && content.show_image" :items="news.slice(0, content.pagination)" layout="cards">
                 <template v-slot:default="data">
                     <k-item layout="cards" :text="data.item.title" :info="data.item.description"
                         :link="data.item.url" :image="{
@@ -16,7 +16,7 @@
                     </k-item>
                 </template>
             </k-items>
-            <k-items v-else-if="news.length && !content.show_image" :items="news">
+            <k-items v-else-if="news.length && !content.show_image" :items="news.slice(0, content.pagination)">
                 <template v-slot:default="data">
                     <k-item :text="data.item.title" :info="data.item.description"
                         :link="data.item.url">
@@ -45,8 +45,7 @@ export default {
     methods: {
         async apiRequests() {
             try {
-                let news = await this.$api.get('getAllNews/' + this.content.pagination);
-                this.news = news.slice(0, this.content.pagination);
+                this.news = await this.$api.get('getAllNews/4');
             } catch (error) {
                 console.error('Error in apiRequests:', error);
             }
