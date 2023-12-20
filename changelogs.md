@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.3 (20/12/2023)
+
+- Remove tailwindcss dependency
++ Add custom classes to custom the frontend snippet
+
 ## 1.0.2 (18/12/2023)
 
 + Kirby 4 support (remove kirby 3)

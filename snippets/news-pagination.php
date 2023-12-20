@@ -1,16 +1,6 @@
 <?php if ($pagination->hasPages()): ?>
-<nav class="pagination">
-  <div class="w-max m-auto">
-    <?php if ($pagination->hasPrevPage()): ?>
-    <a class="pagination-prev" href="<?= $pagination->prevPageUrl() ?>">&larr;</a>
-    <?php else: ?>
-    <span class="pagination-prev">&larr;</span>
-    <?php endif ?>
-    <?php if ($pagination->hasNextPage()): ?>
-    <a class="pagination-next" href="<?= $pagination->nextPageUrl() ?>">&rarr;</a>
-    <?php else: ?>
-    <span class="pagination-next">&rarr;</span>
-    <?php endif ?>
-  </div>
+<nav class="news__pagination">
+  <a class="news__pagination__prev" <?php if ($pagination->hasPrevPage()): ?>href="<?= $pagination->prevPageUrl() ?>"<?php endif ?>>&larr;</a>
+  <a class="news__pagination__next" <?php if ($pagination->hasNextPage()): ?>href="<?= $pagination->nextPageUrl() ?>"<?php endif ?>>&rarr;</a>
 </nav>
 <?php endif ?>
